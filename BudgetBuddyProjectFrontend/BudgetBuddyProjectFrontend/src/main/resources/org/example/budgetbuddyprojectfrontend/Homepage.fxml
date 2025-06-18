@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="498.0" style="-fx-background-image: url('file:/C:/Users/user/IntelliJ%20Projects/BudgetBuddyProject/src/main/resources/images/background.jpg'); -fx-background-repeat: stretch; -fx-background-size: cover;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.budgetbuddyprojectfrontend.HomepageController">
+   <children>
+      <AnchorPane layoutX="26.0" layoutY="24.0" prefHeight="365.0" prefWidth="430.0" style="-fx-background-image: url('file:/C:/Users/user/IntelliJ%20Projects/BudgetBuddyProject/src/main/resources/images/whitebackground.jpg'); -fx-background-repeat: stretch; -fx-background-size: cover;">
+         <children>
+            <Label layoutX="28.0" layoutY="71.0" prefHeight="35.0" prefWidth="303.0" text="Welcome to Easy Savings!">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="34.0" layoutX="382.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/icon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="264.0" layoutY="21.0" text="Budget Buddy">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Hyperlink id="overviewLink" fx:id="overviewLink" layoutX="19.0" layoutY="146.0" prefHeight="35.0" prefWidth="112.0" text="Overview">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink id="incomeLink" fx:id="incomeLink" layoutX="19.0" layoutY="194.0" prefHeight="45.0" prefWidth="179.0" text="Income Tracker">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink id="expenseLink" fx:id="expenseLink" layoutX="19.0" layoutY="242.0" prefHeight="45.0" prefWidth="193.0" text="Expense Tracker">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Hyperlink>
+            <Label layoutX="28.0" layoutY="112.0" prefHeight="17.0" prefWidth="364.0" text="What would you like to check out first?">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Hyperlink id="remindersLink" fx:id="remindersLink" layoutX="19.0" layoutY="292.0" prefHeight="45.0" prefWidth="148.0" text="Reminders">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Hyperlink>
+            <ImageView fitHeight="43.0" fitWidth="35.0" layoutX="131.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/overviewicon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="35.0" layoutX="196.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/incomeicon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="61.0" layoutX="205.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/expenseicon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="54.0" layoutX="153.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/remindericon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="166.0" fitWidth="168.0" layoutX="262.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

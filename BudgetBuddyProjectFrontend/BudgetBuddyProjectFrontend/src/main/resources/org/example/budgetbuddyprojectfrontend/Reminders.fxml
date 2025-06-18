@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="498.0" style="-fx-background-image: url('file:/C:/Users/user/IntelliJ%20Projects/BudgetBuddyProject/src/main/resources/images/background.jpg'); -fx-background-repeat: stretch; -fx-background-size: cover;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.budgetbuddyprojectfrontend.RemindersController">
+   <children>
+      <AnchorPane layoutX="26.0" layoutY="24.0" prefHeight="365.0" prefWidth="430.0" style="-fx-background-image: url('file:/C:/Users/user/IntelliJ%20Projects/BudgetBuddyProject/src/main/resources/images/whitebackground.jpg'); -fx-background-repeat: stretch; -fx-background-size: cover;">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="34.0" layoutX="389.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/icon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="271.0" layoutY="11.0" text="Budget Buddy">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Hyperlink id="overviewLink" fx:id="homeLink" layoutX="7.0" layoutY="7.0" prefHeight="29.0" prefWidth="83.0" text="Home">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Hyperlink>
+            <Label layoutX="167.0" layoutY="39.0" text="Reminders" underline="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="66.0" text="Add a Reminder:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="143.0" layoutX="14.0" layoutY="89.0" stroke="BLACK" strokeType="INSIDE" width="361.0" />
+            <Label layoutX="25.0" layoutY="100.0" text="Reminder Description:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ChoiceBox id="recurrencePatternChoiceBox" fx:id="recurrencePatternChoiceBox" layoutX="167.0" layoutY="158.0" prefWidth="150.0" />
+            <Label layoutX="24.0" layoutY="132.0" text="Reminder Date:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField id="descriptionField" fx:id="descriptionField" layoutX="178.0" layoutY="98.0" />
+            <Button id="addReminderButton" fx:id="addReminderButton" layoutX="127.0" layoutY="190.0" mnemonicParsing="false" text="Add Reminder">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <TableView id="reminderTableView" fx:id="reminderTableView" layoutX="24.0" layoutY="236.0" prefHeight="121.0" prefWidth="162.0">
+              <columns>
+                <TableColumn id="reminderDescriptionColumn" fx:id="reminderDescriptionColumn" prefWidth="75.0" text="Reminder" />
+                <TableColumn id="reminderDateColumn" fx:id="reminderDateColumn" prefWidth="78.0" text="Date" />
+              </columns>
+            </TableView>
+            <ImageView fitHeight="103.0" fitWidth="174.0" layoutX="226.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/logo.png" />
+               </image>
+            </ImageView>
+            <DatePicker id="reminderDatePicker" fx:id="reminderDatePicker" layoutX="130.0" layoutY="130.0" />
+            <Label layoutX="24.0" layoutY="160.0" text="Recurrence Pattern:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

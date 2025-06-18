@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="498.0" style="-fx-background-image: url('file:/C:/Users/user/IntelliJ%20Projects/BudgetBuddyProject/src/main/resources/images/background.jpg'); -fx-background-repeat: stretch; -fx-background-size: cover;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.budgetbuddyprojectfrontend.OverviewController">
+   <children>
+      <AnchorPane layoutX="26.0" layoutY="24.0" prefHeight="365.0" prefWidth="430.0" style="-fx-background-image: url('file:/C:/Users/user/IntelliJ%20Projects/BudgetBuddyProject/src/main/resources/images/whitebackground.jpg'); -fx-background-repeat: stretch; -fx-background-size: cover;">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="34.0" layoutX="389.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/icon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="271.0" layoutY="11.0" text="Budget Buddy">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Hyperlink id="homeLink" fx:id="homeLink" layoutX="7.0" layoutY="7.0" prefHeight="29.0" prefWidth="83.0" text="Home">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Hyperlink>
+            <TableView id="incomeTable" fx:id="incomeTable" layoutX="14.0" layoutY="66.0" prefHeight="80.0" prefWidth="153.0">
+              <columns>
+                <TableColumn id="incomeSource" fx:id="incomeSource" prefWidth="75.0" sortType="DESCENDING" text="Income" />
+                <TableColumn id="incomeAmount" fx:id="incomeAmount" prefWidth="75.0" sortType="DESCENDING" text="Amount" />
+              </columns>
+            </TableView>
+            <Label layoutX="167.0" layoutY="39.0" text="Overview" underline="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TableView id="expenseTable" fx:id="expenseTable" layoutX="251.0" layoutY="66.0" prefHeight="80.0" prefWidth="153.0">
+              <columns>
+                <TableColumn id="expenseCategory" fx:id="expenseCategory" prefWidth="75.0" text="Expense" />
+                <TableColumn id="expenseAmount" fx:id="expenseAmount" prefWidth="75.0" sortType="DESCENDING" text="Amount" />
+              </columns>
+            </TableView>
+            <ImageView fitHeight="63.0" fitWidth="130.0" layoutX="327.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/logo.png" />
+               </image>
+            </ImageView>
+            <PieChart id="incomeChart" fx:id="incomeChart" labelLineLength="15.0" layoutX="14.0" layoutY="161.0" prefHeight="150.0" prefWidth="161.0" title="Income" />
+            <PieChart id="expenseChart" fx:id="expenseChart" labelLineLength="15.0" layoutX="215.0" layoutY="161.0" prefHeight="150.0" prefWidth="161.0" title="Expense" />
+            <Label layoutX="14.0" layoutY="311.0" text="Total Balance:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label id="totalBalanceLabel" fx:id="totalBalanceLabel" layoutX="120.0" layoutY="313.0" prefHeight="22.0" prefWidth="95.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="120.0" fitWidth="104.0" layoutX="156.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/moneyflow.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

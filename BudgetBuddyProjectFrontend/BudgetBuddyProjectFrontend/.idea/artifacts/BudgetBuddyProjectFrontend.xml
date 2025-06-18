@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="BudgetBuddyProjectFrontend">
+    <output-path>$PROJECT_DIR$/out/artifacts/BudgetBuddyProjectFrontend</output-path>
+    <root id="root">
+      <element id="archive" name="BudgetBuddyProjectFrontend.jar">
+        <element id="module-output" name="BudgetBuddyProjectFrontend" />
+      </element>
+    </root>
+  </artifact>
+</component>
